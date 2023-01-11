@@ -33,9 +33,9 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        "Django>=2.2,<3.3",
+        "Django>=2.2,<=4.1",
         "djangorestframework>=3.7,<3.13",
-        "django-haystack>=2.8,<3.1",
+        "django-haystack>=2.8,<=3.2",
         "python-dateutil"
     ],
     tests_require=[
@@ -53,5 +53,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Topic :: Software Development :: Libraries :: Python Modules",
-    ]
+    ],
+    python_requires=">=3.7"
 )
